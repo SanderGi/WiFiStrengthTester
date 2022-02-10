@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WiFi Signal Strength Tester</title>
+    <link rel="icon" type="image/x-icon" href="/img/wifi-signal.png">
+
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <div id="control">
+        <h2>Control Panel</h2>
+        <div>
+            <label>Trial Count: </label>
+            <input type="text" id="trialcount" value="10">
+        </div>
+        <div>
+            <label>Time (sec): </label>
+            <input type="text" id="interval" value="10">
+        </div>
+        <div>
+            <label>SSID: </label>
+            <input type="text" id="ssid" value="master-control">
+        </div>
+        <br>
+        <button id="measure" onclick="collectData()">COLLECT DATA!</button>
+
+        <p id="average">Mean RSS: not calculated</p>
+        <p id="range">RSS range: not calculated</p>
+        <p id="successes">Complete Scans: not calculated</p>
+    </div>
+
+    <div id="trials">
+        <h2>Data Table</h2>
+    </div>
+
+    <h2 id="log-title">Raw Data [--SSID (BSSID): RSS dBm]</h1>
+    <div id="log"></div>
+</body>
+<script src="sketch.js"></script>
+</html>

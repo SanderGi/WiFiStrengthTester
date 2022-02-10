@@ -1,0 +1,95 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#control {
+    text-align: center;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 40%;
+    height: 50%;
+    border: 1px pink dashed;
+}
+
+#control > label {
+    display: inline-block;
+    text-align: right;
+}
+
+#control > div {
+    margin-bottom: 10px;
+    width: 90%;
+    text-align: right;
+}
+
+#measure {
+    display: inline-block;
+    padding: 15px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    margin: auto;
+  }
+  
+  #measure:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+table {
+    margin: 20px;
+    border-collapse: collapse;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+th {
+    border: 2px black solid;
+}
+
+td {
+    border-left: 1px dotted black;
+}
+
+#trials {
+    overflow-y: scroll;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 55%;
+    height: 100%;
+    text-align: center;
+}
+
+#log {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 40%;
+    height: 40%;
+    border: 1px slategray dashed;
+    overflow-y: scroll;
+    display: flex; 
+    flex-direction: column-reverse;
+}
+
+#log-title {
+    position: absolute;
+    right: 0px;
+    bottom: 40%;
+    width: 40%;
+    text-align: left;
+}
