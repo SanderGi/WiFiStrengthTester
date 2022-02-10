@@ -1,6 +1,7 @@
-
+# Dependencies:
 pip install eel
+
 pip install PyInstaller
 
-python -m eel app.py web
+# Compile to exe:
 python -m eel app.py web --onefile --noconsole
