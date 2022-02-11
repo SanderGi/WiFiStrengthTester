@@ -2,7 +2,7 @@
 A simple program with GUI to display the RSS in dBm of available networks. Contains functionality for averaging the RSS values over given time intervals.
 
 ## Recommended Installation Instructions
-* Download the installer (WiFi Strength Tester-x64.msix) from GitHub
+* Download the installer (WiFi Strength Tester-x64.msix) from GitHub (can be found under Code or in releases)
 * To install the msix package you must add the package cert to the list of local machine trusted Certificate Authorities**
   1.	Right Click and select properties on the downloaded msix package
 <br> ![image](https://user-images.githubusercontent.com/97496861/153541132-3f05b208-38af-4ac1-bc17-5b01214db9be.png)
