@@ -27,8 +27,8 @@ A simple program with GUI to display the RSS in dBm of available networks. Conta
   12.	Click OK to the dialog saying the import was successful.
 <br> ![image](https://user-images.githubusercontent.com/97496861/153541646-5d1a0c77-6cc3-4e31-9a06-66aa48c945ec.png)
 * Double click on the installer file and follow the instructions to install the application.
-<br> ![image](https://user-images.githubusercontent.com/97496861/153541679-70417363-6218-441c-b1d6-ed196ef11d23.png)
 * At the end of the installer you can launch the WifiTester, or you can open the app from the start menu
+<br> ![image](https://user-images.githubusercontent.com/97496861/153541679-70417363-6218-441c-b1d6-ed196ef11d23.png)
 * Click Collect Data
 <br> ![image](https://user-images.githubusercontent.com/97496861/153541702-aa14acb7-c2ed-40ff-96ac-5d015b3fa136.png)
 
