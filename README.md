@@ -1,9 +1,42 @@
 # WiFiStrengthTester
 A simple program with GUI to display the RSS in dBm of available networks. Contains functionality for averaging the RSS values over given time intervals.
 
-## Download Options
+## Recommended Installation Instructions
+* Download the installer (WiFi Strength Tester-x64.msix) from GitHub
+* To install the msix package you must add the package cert to the list of local machine trusted Certificate Authorities**
+  1.	Right Click and select properties on the downloaded msix package
+<br> ![image](https://user-images.githubusercontent.com/97496861/153541132-3f05b208-38af-4ac1-bc17-5b01214db9be.png)
+  2.	On the properties tab, click Unblock and then click Apply.
+  3.	On the Digital signatures tab, select the TestCert and Click Details.
+<br> ![image](https://user-images.githubusercontent.com/97496861/153541341-997b87c2-5cec-486d-bbb3-43e43f7b936a.png)
+  4.	Click  View Certificate
+<br> ![image](https://user-images.githubusercontent.com/97496861/153541465-326f674c-50f9-4e92-ad10-9325009f14eb.png)
+  5.	Click Install Certificate
+<br> ![image](https://user-images.githubusercontent.com/97496861/153541485-163f3e5f-635b-46f0-8595-d334ef20cb1e.png)
+  6.	Select Local Machine and Click Next*
+<br> ![image](https://user-images.githubusercontent.com/97496861/153541501-a6f7b661-2cc2-4ddf-b6ff-06b36321c39e.png)
+  7.	Click Yes in the User Account Control dialog
+  8.	Click Place all certificates in the following store, click Browse
+<br> ![image](https://user-images.githubusercontent.com/97496861/153541521-d1b59c22-2b3d-4ac5-a36d-04ec87f7ab43.png)
+  9.	Select Trusted Root Certification Authorities and click OK.
+<br> ![image](https://user-images.githubusercontent.com/97496861/153541561-eb5a8fe4-9dbc-445e-91fe-5f431d0fdefc.png)
+  10.	Click Next
+<br> ![image](https://user-images.githubusercontent.com/97496861/153541587-05aaa711-3791-4104-b29f-07884588e2c3.png)
+  11.	Click Finish
+<br> ![image](https://user-images.githubusercontent.com/97496861/153541613-0fa8b256-d3d1-4220-9255-5d118abdff7d.png)
+  12.	Click OK to the dialog saying the import was successful.
+<br> ![image](https://user-images.githubusercontent.com/97496861/153541646-5d1a0c77-6cc3-4e31-9a06-66aa48c945ec.png)
+* Double click on the installer file and follow the instructions to install the application.
+<br> ![image](https://user-images.githubusercontent.com/97496861/153541679-70417363-6218-441c-b1d6-ed196ef11d23.png)
+* At the end of the installer you can launch the WifiTester, or you can open the app from the start menu
+* Click Collect Data
+<br> ![image](https://user-images.githubusercontent.com/97496861/153541702-aa14acb7-c2ed-40ff-96ac-5d015b3fa136.png)
+
+\**I can't afford to buy an official certificate to sign the application, so bear with me on this one lol
+
+## Alternative Download Options
 1. Download the WiFiStrengthTester zipfile, unzip it, and run the app.exe file inside it
-2. Alternatively, download the single file app.exe and disable your antivirus lol
+2. Download the single file app.exe and disable your antivirus lol
 3. Download the Source folder, make sure python 3.x.x and the necessary dependencies are installed, and run app.py
 
 ## Application notes
