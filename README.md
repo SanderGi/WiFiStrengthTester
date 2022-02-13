@@ -32,7 +32,7 @@ A simple program with GUI to display the RSS in dBm of available networks. Conta
 * Click Collect Data
 <br> ![image](https://user-images.githubusercontent.com/97496861/153541702-aa14acb7-c2ed-40ff-96ac-5d015b3fa136.png)
 
-\**I can't afford to buy an official certificate to sign the application, so bear with me on this one lol
+\**You only need to do this once the first time you install one of my executables. I can't afford to buy an official certificate to sign the application, so bear with me on this one lol
 
 ## Alternative Download Options
 1. Download the WiFiStrengthTester zipfile, unzip it, and run the app.exe file inside it
@@ -56,3 +56,8 @@ A simple program with GUI to display the RSS in dBm of available networks. Conta
 ## Demo images
 If correctly installed it should look something like this:
 ![image](https://user-images.githubusercontent.com/97496861/153332885-59c45192-06fa-4b46-a74b-d135fa4ca40b.png)
+
+## Common Errors
+* WinError 10048--Only one usage of each socket adress/port is normally permitted <br>
+![issue 1589](https://user-images.githubusercontent.com/97496861/153745320-9edf044e-ecd8-40b6-8468-4f4c31f05915.png)
+**Fix:** You have some sort of unterminated process running on the port that WiFiTester uses (8080). Find it and kill it or compile the source code with a different port set in app.py
