@@ -2,7 +2,7 @@
 A simple program with GUI to display the RSS in dBm of available networks. Contains functionality for averaging the RSS values over given time intervals.
 
 ## Recommended Installation Instructions
-* Download the installer (WiFi Strength Tester-x64.msix) from GitHub (can be found under Code or in releases)
+* Download the installer (WiFi Strength Tester-x64.msix) from GitHub (can be found under Code or in Releases)
 * To install the msix package you must add the package cert to the list of local machine trusted Certificate Authorities**
   1.	Right Click and select properties on the downloaded msix package
 <br> ![image](https://user-images.githubusercontent.com/97496861/153541132-3f05b208-38af-4ac1-bc17-5b01214db9be.png)
@@ -64,16 +64,16 @@ If correctly installed it should look something like this:
 
 ## Changelog
 Updating using the msix installer is easy, you just download and run the new installer (no need to uninstall the program first).
-### v1.0.0
-- Basic RSS reading capabilities
-- Basic averaging functionality (mean, range, completed scans)
-- Basic UI (control panel, datatable)
-- Logo's and other neat stuff
-- Uses port 8000 (possibly 8080)
 ### v1.0.1
-- Removed extraneous entries in the data log for clarity
+- Removed extraneous entries in the data table for clarity
 - Rounded mean RSS to the nearest integer to adhere to sig figs
 - Disables the Collect Data! button when scanning to avoid multiple scans being started concurrently
 - Changed the default Trial Count to 15 to get more complete scans for poorer connections
 - UI improvements (drop-down to select available ssids, empty text boxes display a discription of what they do)
 - Uses port 8080 exclusively
+### v1.0.0
+- Basic RSS reading capabilities
+- Basic averaging functionality (mean, range, completed scans)
+- Basic UI (control panel, data table)
+- Logo's and other neat stuff
+- Uses port 8000 (possibly 8080)
