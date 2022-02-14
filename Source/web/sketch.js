@@ -20,9 +20,12 @@ function displayWifiData(trial, string) {
     }
 
     // format data in table
+    document.getElementById('ssids').innerHTML = '<option value="*all*">';
     $('table tr:last').css("border-bottom","2px solid black");
     for (const [ssid, rss] of Object.entries(ssids)) {
         // const average = (array) => array.reduce((a, b) => a + b) / array.length;
+        document.getElementById('ssids').innerHTML += '<option value="'+ssid+'">';
+        if (ssid != id && id != '*all*') continue;
         let tr = tbody.insertRow();
         let td = tr.insertCell();
         td.appendChild(document.createTextNode(`${trial}`));
@@ -42,11 +45,16 @@ function displayWifiData(trial, string) {
             totalRSS += rssReading;
             minRSS = Math.min(rssReading, minRSS);
             maxRSS = Math.max(rssReading, maxRSS);
-            let average = totalRSS / count;
+            let average = Math.round(totalRSS / count);
             document.getElementById("average").innerHTML = `Mean RSS: ${average} dBm`;
             document.getElementById("range").innerHTML = `RSS range: ${minRSS} to ${maxRSS} dBm`;
             document.getElementById("successes").innerHTML = "Complete Scans: " + count;
         }
+    }
+
+    // reenable button if all trials are complete
+    if (trial == trialcount - 1) {
+        document.getElementById("measure").disabled = false;
     }
 }
 
@@ -76,16 +84,19 @@ function createTable() {
 }
 
 createTable();
-let id;
+let id = "alor873uw:#(*ug";
 let minRSS = Infinity;
 let maxRSS = -Infinity;
 let totalRSS = 0;
 let count = 0;
+let trialcount = 0;
+eel.collectWifiData(2, 2) // initial trial to find networks
 function collectData() {
+    document.getElementById("measure").disabled = true;
     document.getElementById("trials").innerHTML = "<h2>Data Table</h2>";
     tbl = document.createElement('table');
     createTable();
-    let trialcount = parseInt(document.getElementById("trialcount").value);
+    trialcount = parseInt(document.getElementById("trialcount").value);
     let interval = parseInt(document.getElementById("interval").value);
     id = document.getElementById("ssid").value;
     minRSS = Infinity;
@@ -94,3 +105,9 @@ function collectData() {
     count = 0;
     eel.collectWifiData(trialcount, interval / trialcount);
 }
+
+let savedVal;
+$('#ssid').on('click', function() {
+    savedVal = $(this).val();
+    $(this).val('');
+});

@@ -15,19 +15,22 @@
         <h2>Control Panel</h2>
         <div>
             <label>Trial Count: </label>
-            <input type="text" id="trialcount" value="10">
+            <input type="text" id="trialcount" value="15" placeholder="How many scans">
         </div>
         <div>
             <label>Time (sec): </label>
-            <input type="text" id="interval" value="10">
+            <input type="text" id="interval" value="10" placeholder="How long to scan">
         </div>
         <div>
             <label>SSID: </label>
-            <input type="text" id="ssid" value="master-control">
+            <input type="text" id="ssid" value="dd-wrt" list="ssids" placeholder="Network Name">
+            <datalist id="ssids">
+                <option value="*all*">
+            </datalist>
         </div>
         <br>
         <button id="measure" onclick="collectData()">COLLECT DATA!</button>
-
+        <div style="height: 15px;"></div>
         <p id="average">Mean RSS: not calculated</p>
         <p id="range">RSS range: not calculated</p>
         <p id="successes">Complete Scans: not calculated</p>

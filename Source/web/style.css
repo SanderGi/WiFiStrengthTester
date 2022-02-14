@@ -20,7 +20,7 @@ body {
 }
 
 #control > div {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     width: 90%;
     text-align: right;
 }
@@ -39,13 +39,20 @@ body {
     border-radius: 15px;
     box-shadow: 0 9px #999;
     margin: auto;
-  }
+}
   
-  #measure:active {
+#measure:active {
     background-color: #3e8e41;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
-  }
+}
+
+#measure:disabled {
+    color: rgba(255, 255, 255, 0.705);
+    background-color: rgba(76, 175, 79, 0.705);
+    box-shadow: 0 9px rgba(153, 153, 153, 0.705);
+    cursor: wait;
+}
 
 table {
     margin: 20px;
@@ -92,4 +99,8 @@ td {
     bottom: 40%;
     width: 40%;
     text-align: left;
+}
+
+input::-webkit-calendar-picker-indicator {
+    opacity: 100;
 }

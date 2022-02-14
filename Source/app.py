@@ -10,4 +10,4 @@ def collectWifiData(times, waittime):
         eel.sleep(waittime)
         eel.displayWifiData(i, str(get_BSSI()))
 
-eel.start('index.html', size=(1024, 768), position=(0,0))
+eel.start('index.html', port=8080, size=(1024, 768), position=(0,0))
