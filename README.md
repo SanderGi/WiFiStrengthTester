@@ -59,5 +59,21 @@ If correctly installed it should look something like this:
 
 ## Common Errors
 * WinError 10048--Only one usage of each socket adress/port is normally permitted <br>
-![issue 1589](https://user-images.githubusercontent.com/97496861/153745320-9edf044e-ecd8-40b6-8468-4f4c31f05915.png)
+![issue 1589](https://user-images.githubusercontent.com/97496861/153745320-9edf044e-ecd8-40b6-8468-4f4c31f05915.png) <br>
 **Fix:** You have some sort of unterminated process running on the port that WiFiTester uses (8080). Find it and kill it or compile the source code with a different port set in app.py
+
+## Changelog
+Updating using the msix installer is easy, you just download and run the new installer (no need to uninstall the program first).
+### v1.0.0
+- Basic RSS reading capabilities
+- Basic averaging functionality (mean, range, completed scans)
+- Basic UI (control panel, datatable)
+- Logo's and other neat stuff
+- Uses port 8000 (possibly 8080)
+### v1.0.1
+- Removed extraneous entries in the data log for clarity
+- Rounded mean RSS to the nearest integer to adhere to sig figs
+- Disables the Collect Data! button when scanning to avoid multiple scans being started concurrently
+- Changed the default Trial Count to 15 to get more complete scans for poorer connections
+- UI improvements (drop-down to select available ssids, empty text boxes display a discription of what they do)
+- Uses port 8080 exclusively
