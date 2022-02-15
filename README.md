@@ -2,7 +2,7 @@
 A simple program with GUI to display the RSS in dBm of available networks. Contains functionality for averaging the RSS values over given time intervals.
 
 ## Recommended Installation Instructions (coming soon)
-Go to the Windows Store and [install the program](https://www.microsoft.com/store/apps/9N3BV3RVGXDV). The application is currently still under review.
+Go to the Microsoft Store and [install the program](https://www.microsoft.com/store/apps/9N3BV3RVGXDV). The application is currently still under review.
 
 ## Secondary Installation Instructions
 * Download the installer (WiFi Strength Tester-x64.msix) from GitHub (can be found under Code or in Releases)
