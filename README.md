@@ -4,6 +4,8 @@ A simple program with GUI to display the RSS in dBm of available networks. Conta
 ## Recommended Installation Instructions (coming soon)
 Go to the Microsoft Store and [install the program](https://www.microsoft.com/store/apps/9N3BV3RVGXDV). The application is currently still under review.
 
+Make sure you have Edge, Chrome, and/or Chromium installed since the application use them to render the UI.
+
 ## Secondary Installation Instructions
 * Download the installer (WiFi Strength Tester-x64.msix) from GitHub (can be found under Code or in Releases)
 * To install the msix package you must add the package cert to the list of local machine trusted Certificate Authorities**
