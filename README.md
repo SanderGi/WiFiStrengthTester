@@ -2,7 +2,7 @@
 A simple program with GUI to display the RSS in dBm of available networks. Contains functionality for averaging the RSS values over given time intervals.
 
 ## Recommended Installation Instructions (v1.0.1 has been published)
-Go to the Windows Store and [install the program](https://www.microsoft.com/store/apps/9N3BV3RVGXDV).
+Go to the Microsoft Store and [install the program](https://www.microsoft.com/store/apps/9N3BV3RVGXDV).
 
 Make sure you have Edge, [Chrome](https://www.google.com/intl/en_us/chrome/), or Chromium installed since the application needs a browser for rendering.
 
