@@ -1,4 +1,6 @@
 # WiFiStrengthTester
+[![maintenance-status](https://img.shields.io/badge/maintenance-as--is-yellow.svg)](https://gist.github.com/taiki-e/ad73eaea17e2e0372efb76ef6b38f17b)
+
 A simple program with GUI to display the RSS in dBm of available networks. Contains functionality for averaging the RSS values over given time intervals.
 
 ## Recommended Installation Instructions (v1.0.1 has been published)
